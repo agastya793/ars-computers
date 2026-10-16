@@ -467,6 +467,194 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Product Discovery Section */}
+      <section
+        id="products"
+        aria-labelledby="products-discovery-heading"
+        className="border-t border-border bg-background py-16 sm:py-20 lg:py-24"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold text-primary">
+              <span>HARDWARE & EQUIPMENT DISCOVERY</span>
+            </div>
+            <h2
+              id="products-discovery-heading"
+              className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
+            >
+              Explore Computer Products
+            </h2>
+            <p className="mt-4 text-base text-foreground-muted sm:text-lg leading-relaxed">
+              Help customers discover components, peripherals, printers, and equipment for their computing needs.
+            </p>
+          </div>
+
+          {/* 4 Product Category Cards Grid */}
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {/* 1. Computer Components */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-surface p-6 shadow-xs transition-colors hover:border-accent-blue/40 hover:bg-surface-elevated">
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-accent-blue/10 text-accent-blue" aria-hidden="true">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V5.25a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 5.25v13.5A2.25 2.25 0 0 0 6.75 21Z" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-accent-blue">
+                    Core Hardware
+                  </span>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-foreground">
+                  Computer Components
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                  Processors, graphics cards, motherboards, RAM, storage, power supplies, and cooling for new rigs or upgrades.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>Processors (Intel Core & AMD Ryzen)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>Dedicated Graphics Cards (GPUs)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>DDR4 & DDR5 Desktop RAM</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>NVMe SSDs & Modular Power Supplies</span>
+                </li>
+              </ul>
+            </article>
+
+            {/* 2. Custom PC Essentials */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-surface p-6 shadow-xs transition-colors hover:border-accent-coral/40 hover:bg-surface-elevated">
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-accent-coral/10 text-accent-coral" aria-hidden="true">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-accent-coral">
+                    Build Essentials
+                  </span>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-foreground">
+                  Custom PC Essentials
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                  Components and accessories used for custom desktop builds, optimized for thermals, cable management, and airflow.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Mid-Tower & Full-Tower Cabinets</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Liquid (AIO) & Tower Air Coolers</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Chassis Fan Kits & Thermal Pastes</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Custom Sleeved Extension Cables</span>
+                </li>
+              </ul>
+            </article>
+
+            {/* 3. Peripherals & Accessories */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-surface p-6 shadow-xs transition-colors hover:border-warning/40 hover:bg-surface-elevated">
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-warning/10 text-warning" aria-hidden="true">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-warning">
+                    Peripherals
+                  </span>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-foreground">
+                  Peripherals & Accessories
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                  Keyboards, mice, monitors, cables, and other computer accessories, presented as product categories rather than claims of current stock.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-warning" aria-hidden="true" />
+                  <span>Display Panels & Desktop Monitors</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-warning" aria-hidden="true" />
+                  <span>Keyboards, Mice & Desk Mats</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-warning" aria-hidden="true" />
+                  <span>HDMI, DisplayPort & Ethernet Cables</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-warning" aria-hidden="true" />
+                  <span>USB Hubs, Adapters & Audio Peripherals</span>
+                </li>
+              </ul>
+            </article>
+
+            {/* 4. Printers & Supplies */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-surface p-6 shadow-xs transition-colors hover:border-success/40 hover:bg-surface-elevated">
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-success/10 text-success" aria-hidden="true">
+                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5zm-3 0h.008v.008H15V10.5z" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-success">
+                    Printing Supplies
+                  </span>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold text-foreground">
+                  Printers & Supplies
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                  Printers, ink or toner cartridges, and related supplies for commercial office and personal printing needs.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-success" aria-hidden="true" />
+                  <span>Compact Laser & Inkjet Printers</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-success" aria-hidden="true" />
+                  <span>Genuine Replacement Ink Bottles</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-success" aria-hidden="true" />
+                  <span>High-Capacity Toner Cartridges</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-success" aria-hidden="true" />
+                  <span>Printing Maintenance Accessories</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
