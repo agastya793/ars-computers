@@ -795,6 +795,69 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Enquiry Call to Action Section */}
+      <section
+        id="contact"
+        aria-labelledby="cta-heading"
+        className="border-t border-border bg-background py-16 sm:py-20 lg:py-24"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden rounded-2xl bg-brand-navy px-6 py-12 sm:px-12 sm:py-16 lg:px-16 lg:py-20 text-white shadow-xl">
+            {/* Subtle decorative glow elements */}
+            <div
+              className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-primary/20 blur-3xl"
+              aria-hidden="true"
+            />
+            <div
+              className="pointer-events-none absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-accent-blue/15 blur-3xl"
+              aria-hidden="true"
+            />
+
+            <div className="relative z-10 mx-auto max-w-3xl text-center">
+              {/* Category Badge */}
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-1 text-xs font-semibold text-accent-blue backdrop-blur-xs">
+                <span>CONNECT WITH OUR TEAM</span>
+              </div>
+
+              {/* Main Heading */}
+              <h2
+                id="cta-heading"
+                className="mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl lg:leading-tight"
+              >
+                Let&apos;s Discuss Your Computer &amp; Technology Needs
+              </h2>
+
+              {/* Supporting Copy */}
+              <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
+                Looking for computer components, a custom PC build, help with a hardware issue,
+                printer supplies, or an equipment installation? Get in touch to discuss what you need.
+              </p>
+
+              {/* Actions */}
+              <div className="mt-8 flex flex-col items-center justify-center gap-3.5 sm:flex-row sm:gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-lg bg-primary px-7 text-base font-semibold text-white shadow-sm transition-colors hover:bg-primary-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy"
+                >
+                  Enquire About Services
+                </Link>
+                <Link
+                  href="/products"
+                  className="inline-flex h-12 w-full sm:w-auto items-center justify-center rounded-lg border border-white/20 bg-white/5 px-7 text-base font-semibold text-white backdrop-blur-xs transition-colors hover:bg-white/15 hover:border-white/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy"
+                >
+                  Explore Products
+                </Link>
+              </div>
+
+              {/* Informational Guidance Line */}
+              <div className="mt-10 border-t border-white/10 pt-6 text-xs text-slate-400">
+                <span>Enquiry-based catalogue • Personal hardware consultation • Retail &amp; institutional enquiries</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
