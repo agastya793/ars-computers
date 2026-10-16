@@ -655,6 +655,146 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Customer Guidance Section */}
+      <section
+        id="guidance"
+        aria-labelledby="guidance-heading"
+        className="border-t border-border bg-surface/50 py-16 sm:py-20 lg:py-24"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-xs font-semibold text-primary">
+              <span>PRACTICAL CUSTOMER GUIDANCE</span>
+            </div>
+            <h2
+              id="guidance-heading"
+              className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl"
+            >
+              Technology Solutions for Your Needs
+            </h2>
+            <p className="mt-4 text-base text-foreground-muted sm:text-lg leading-relaxed">
+              Whether you are selecting new components, addressing unexpected hardware faults,
+              or planning premises equipment installation, here is how you can work with ARS Computers.
+            </p>
+          </div>
+
+          {/* 3 Guidance Blocks Grid */}
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {/* Block 1: Choose the Right Components */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-background p-6 shadow-xs sm:p-8">
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-blue/10 text-accent-blue" aria-hidden="true">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-accent-blue">
+                    Hardware Consultation
+                  </span>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold text-foreground">
+                  Choose the Right Components
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+                  Customers can discuss their intended use and component requirements when exploring computer
+                  hardware or upgrades—whether planning a gaming computer, creative workstation, or office PC.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2.5 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>Discussion of intended workload, software demands, and budget parameters</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>Clarification on compatible processor, memory, and power requirements</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-blue" aria-hidden="true" />
+                  <span>Guidance on balanced performance without unnecessary component mismatch</span>
+                </li>
+              </ul>
+            </article>
+
+            {/* Block 2: Get Help With Computer Issues */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-background p-6 shadow-xs sm:p-8">
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-coral/10 text-accent-coral" aria-hidden="true">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0zm-9 3.75h.008v.008H12v-.008z" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-accent-coral">
+                    Hardware Assistance
+                  </span>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold text-foreground">
+                  Get Help With Computer Issues
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+                  Customers can enquire about computer hardware problems, diagnostics, and basic repair services
+                  when facing system stability issues, startup trouble, or suspected hardware faults.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2.5 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Hardware inspection for desktop and laptop boot or display failures</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Evaluation of overheating, noisy cooling fans, and dust accumulation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-coral" aria-hidden="true" />
+                  <span>Discussion of practical part replacement options rather than guessing</span>
+                </li>
+              </ul>
+            </article>
+
+            {/* Block 3: Plan Your Installation */}
+            <article className="flex flex-col justify-between rounded-xl border border-border bg-background p-6 shadow-xs sm:p-8">
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-warning/10 text-warning" aria-hidden="true">
+                    <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth="1.75" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                    </svg>
+                  </span>
+                  <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-warning">
+                    Installation Setup
+                  </span>
+                </div>
+                <h3 className="mt-4 text-xl font-semibold text-foreground">
+                  Plan Your Installation
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
+                  Customers can enquire about CCTV setup, printer-related services, and biometric attendance hardware
+                  installation to support safe and organized commercial or office facilities.
+                </p>
+              </div>
+              <ul className="mt-6 space-y-2.5 border-t border-border/60 pt-4 text-xs text-foreground-muted">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-warning" aria-hidden="true" />
+                  <span>CCTV surveillance equipment mounting, wiring, and DVR/NVR unit setup</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-warning" aria-hidden="true" />
+                  <span>Printer setup and ongoing replacement or refilling cartridge assistance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-warning" aria-hidden="true" />
+                  <span>Physical wall mounting and power/network setup for biometric attendance terminals</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
